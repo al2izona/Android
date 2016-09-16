@@ -1,0 +1,38 @@
+OpenKore version what-will-become-2.1
+Network state = 1
+Network handler = Network::DirectConnection
+SVN revision: unknown
+Loaded plugins:
+  plugins/macro/macro.pl (macro; description: allows usage of macros)
+  plugins/profiles/profiles.pl (profiles; description: Profiles Selector)
+
+Error message:
+Assertion ('0' shouldn't be that!) failed!
+ at C:/Users/Essential/Documents/ROEXE-Bot/¡éåÇÃéåÇ xKore 0/src/deps/Carp/Assert.pm line 379
+	Carp::Assert::shouldnt(0, 0) called at src/Network/Send.pm line 307
+	Network::Send::sendToServer('Network::Send::tRO=HASH(0xa0f773c)', '') called at src/Network/Send.pm line 460
+	Network::Send::sendMasterLogin('Network::Send::tRO=HASH(0xa0f773c)', 'Zestiria', '1qaz2wsx', 7, 24) called at src/Network/DirectConnection.pm line 397
+	Network::DirectConnection::checkConnection('Network::DirectConnection=HASH(0x700f754)') called at src/functions.pl line 730
+	main::mainLoop_initialized() called at src/functions.pl line 75
+	main::mainLoop() called at src/Interface/Wx.pm line 190
+	Interface::Wx::__ANON__('Interface::Wx=HASH(0x46f277c)', 'Wx::TimerEvent=SCALAR(0x9c835a4)') called at src/Interface/Wx.pm line 163
+	eval {...} called at src/Interface/Wx.pm line 163
+	Interface::Wx::mainLoop('Interface::Wx=HASH(0x46f277c)') called at openkore.pl line 97
+	main::__start() called at start.pl line 136
+
+Stack trace:
+Assertion ('0' shouldn't be that!) failed!
+ at C:/Users/Essential/Documents/ROEXE-Bot/¡éåÇÃéåÇ xKore 0/src/deps/Carp/Assert.pm line 379
+	Carp::Assert::shouldnt(0, 0) called at src/Network/Send.pm line 307
+	Network::Send::sendToServer('Network::Send::tRO=HASH(0xa0f773c)', '') called at src/Network/Send.pm line 460
+	Network::Send::sendMasterLogin('Network::Send::tRO=HASH(0xa0f773c)', 'Zestiria', '1qaz2wsx', 7, 24) called at src/Network/DirectConnection.pm line 397
+	Network::DirectConnection::checkConnection('Network::DirectConnection=HASH(0x700f754)') called at src/functions.pl line 730
+	main::mainLoop_initialized() called at src/functions.pl line 75
+	main::mainLoop() called at src/Interface/Wx.pm line 190
+	Interface::Wx::__ANON__('Interface::Wx=HASH(0x46f277c)', 'Wx::TimerEvent=SCALAR(0x9c835a4)') called at src/Interface/Wx.pm line 163
+	eval {...} called at src/Interface/Wx.pm line 163
+	Interface::Wx::mainLoop('Interface::Wx=HASH(0x46f277c)') called at openkore.pl line 97
+	main::__start() called at start.pl line 136
+ at src/Interface/Wx.pm line 163
+	Interface::Wx::mainLoop('Interface::Wx=HASH(0x46f277c)') called at openkore.pl line 97
+	main::__start() called at start.pl line 136
